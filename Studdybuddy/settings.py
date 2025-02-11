@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'Studdybuddy.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',  # PostgreSQL database engine
+        'NAME': 'postgres',              # Name of your PostgreSQL database
+        'USER': 'postgres',              # PostgreSQL username
+        'PASSWORD': 'acernitrO5',      # PostgreSQL password
+        'HOST': 'localhost',                       # PostgreSQL server address (use 'localhost' if running locally)
+        'PORT': '5432',                            # PostgreSQL port (default is 5432)
     }
 }
 
